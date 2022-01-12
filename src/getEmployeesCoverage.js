@@ -13,8 +13,8 @@ const employeeLocation = () => {
       });
       return acc;
     }, []);
-    return allresult;
-}
+  return allresult;
+};
 
 function getEmployeesCoverage(param) {
   // seu código aqui
@@ -29,5 +29,5 @@ function getEmployeesCoverage(param) {
   }
   return employeeLocation().find((item) => item.id.includes(findEmployee.id));
 }
-console.log(getEmployeesCoverage());
+
 module.exports = getEmployeesCoverage;
